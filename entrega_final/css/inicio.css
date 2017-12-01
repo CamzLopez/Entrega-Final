@@ -1,0 +1,69 @@
+body {
+    margin: 0 auto;
+    font-family: "Ubuntu Mono", monospace; 
+    background-image: url("../img/FondoInicio.png");
+}
+
+#logoprincipal {
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    
+}
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%
+}
+
+.bloque {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+.redes img {
+    width: 34px;
+    height: 34px;
+}
+
+.pago img {
+    width: 64px;
+    height: 20px;
+}
+
+h6 {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 720px){
+    section{
+         width: 400px;
+    }
+}
+    
+@media only screen and (max-width: 480px){
+    section{
+         width: 300px;
+    }
+}

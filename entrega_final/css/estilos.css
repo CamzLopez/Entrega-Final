@@ -1,0 +1,197 @@
+body {
+    margin: 0 auto;
+    font-family: "Ubuntu Mono", monospace;    
+}
+
+.superior {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: black;
+}
+
+#logoprincipal {
+    width: 200px;
+    height: 30px;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#carrito {
+    margin-left: 700px;
+    width: 30px;
+    height: 30px;
+
+}
+
+#sesion {
+    font-size: 1rem;
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    margin-left: 3px;
+}
+nav ul{
+    list-style: none;
+}
+
+nav ul li {
+    float : left;
+    background-color:#8A9EA0;
+    margin-right: 5px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+nav ul li a {
+    display : block;
+    width : 140px;
+    font-size : 14px;
+    text-align : center;
+    text-decoration : none;
+    color : black;
+}
+
+.nav-item1 {
+    display: none;
+}
+
+.carousel{
+    box-shadow: 2px 2px 2px grey;
+}
+
+.slidetext {
+    text-shadow: 2px 2px 2px black;
+}
+
+.categorias {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.categorias img {
+    width: 128px;
+    height: 128px;
+    box-shadow: 2px 2px 2px grey;
+    margin-left: 10px;
+}
+
+.categorias img:hover {
+    width: 160px;
+    height: 160px;
+}
+
+#ofertas{
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #A1D2D0;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#ofertas img {
+    width: 380px;
+    height: 200px;
+    box-shadow: 2px 2px 2px grey;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%
+}
+
+.bloque {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+.redes img {
+    width: 34px;
+    height: 34px;
+}
+
+.pago img {
+    width: 64px;
+    height: 20px;
+}
+
+h6 {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:920px){
+    #carrito {
+        margin-left: 400px;
+    }
+    .categorias img {
+        width: 128px;
+        height: 128px;
+        box-shadow: 2px 2px 2px grey;
+        margin-left: 10px;
+    }
+    
+    .categorias img:hover {
+        width: 128px;
+        height: 128px;
+    }
+
+}
+
+@media only screen and (max-width: 720px){
+    .categorias img {
+        width: 250px;
+        height:250px;
+    }
+
+    .categorias img:hover {
+        width: 250px;
+        height: 250px;
+    }
+    .nav-item1 {
+        display: initial;
+    }
+    #carrito {
+        display: none;
+    }   
+    #sesion {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #carrito {
+        display: none;
+    }
+    #sesion {
+        display: none;
+    }
+    #ofertas{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .categorias img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .categorias img:hover {
+        width: 200px;
+        height: 200px;
+    }
+    .nav-item1 {
+        display: initial;
+    }
+}

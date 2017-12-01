@@ -1,0 +1,138 @@
+body {
+    margin: 0 auto;
+    font-family: "Ubuntu Mono", monospace;    
+}
+
+.superior {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: black;
+}
+
+#logoprincipal {
+    width: 200px;
+    height: 30px;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#carrito {
+    margin-left: 700px;
+    width: 30px;
+    height: 30px;
+
+}
+
+#sesion {
+    font-size: 1rem;
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    margin-left: 3px;
+}
+nav ul{
+    list-style: none;
+}
+
+nav ul li {
+    float : left;
+    background-color:#8A9EA0;
+    margin-right: 5px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+nav ul li a {
+    display : block;
+    width : 140px;
+    font-size : 14px;
+    text-align : center;
+    text-decoration : none;
+    color : black;
+}
+
+.nav-item1 {
+    display: none;
+}
+
+#estructuracarrito {
+    text-align: center;
+    display: block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color:#8A9EA0;
+}
+
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.bloque {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+.redes img {
+    width: 34px;
+    height: 34px;
+}
+
+.pago img {
+    width: 64px;
+    height: 20px;
+}
+
+h6 {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:920px){
+    #carrito {
+        margin-left: 400px;
+    }
+    #estructuracarrito {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .nav-item1 {
+        display: initial;
+    }
+    #carrito {
+        display: none;
+    }   
+    #sesion {
+        display: none;
+    }
+    #estructuracarrito {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #carrito {
+        display: none;
+    }
+    #sesion {
+        display: none;
+    }
+    .nav-item1 {
+        display: initial;
+    }
+    #estructuracarrito {
+        width: 300px;
+    }
+}

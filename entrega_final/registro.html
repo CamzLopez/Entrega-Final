@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/registrocss.css">
+</head>
+<body>
+    <head>
+        <a href="index.html"><img id="logoprincipal" src="img/Logo.png" alt="Logo"></a>
+    </head>
+    <section>
+        <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+              </div>
+            </div>
+            <div class="form-group row">
+                    <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre" required maxlength="50">
+                    </div>
+                  </div>
+            <div class="form-group row">
+                <label for="inputName2" class="col-sm-2 col-form-label">Apellidos</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputName2" placeholder="Apellidos" required maxlength="50">
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" minlength="8">
+              </div>
+            </div>
+            <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Verificar contraseña</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword2" placeholder="Verificar contraseña" minlength="8">
+                 </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-legend col-sm-2">Sexo</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      Masculino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      Femenino
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <div class="col-sm-2">Noticias</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="novedadesemail"> Deseo recibir novedades a mi E-mail.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button id="boton" type="submit"   class="btn btn-primary" >Registrarse</button>
+              </div>
+            </div>
+          </form>
+    </section>
+    <footer>
+      <div class="bloque">
+        <h3>Redes Sociales</h3>
+        <a class="redes" href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a class="redes" href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        <a class="redes" href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a class="redes" href="#"><img src="img/youtube.png" alt="Youtube"></a>
+      </div>
+      <div class="bloque">
+        <h3>Formas de Pago</h3>
+        <a class="pago" href=""><img src="img/Visa.png" alt="Visa"></a>
+        <a class="pago" href=""><img src="img/Mastercard.png" alt="MasterCard"></a>
+        <a class="pago" href=""><img src="img/paypal.png" alt="Paypal"></a>
+      </div>
+      <div class="bloque">
+        <h6>Use of this Web site constitutes acceptance of the Terms and Conditions and Privacy policy. All copyrights, trade marks, service marks belong to the corresponding owners. </h3>
+      </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/registro.js"></script>    
+</body>
+</html>
