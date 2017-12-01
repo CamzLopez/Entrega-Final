@@ -44,22 +44,22 @@ function validar_clave(e) {
                         
                             };
                             crearUsuario(person); // se pasan los datos para crear el usaurio
-
+                            function crearUsuario(usuario){ // toma los parametros   
+                                var xhr = new XMLHttpRequest();
+                                var url = "http://localhost:3000/users";
+                                xhr.open("POST", url, true);
+                                xhr.setRequestHeader("Content-type", "application/json");
+                                xhr.onreadystatechange = function () {
+                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                    var json = JSON.parse(xhr.responseText);
+                                    }
+                            };
+                            xhr.send(JSON.stringify(usuario)); // se crea el usuario en el db.json
+                            return window.location="sesion.html";
+                            }
                         }
                     }
                 });  
     
             }
-            function crearUsuario(usuario){ // toma los parametros   
-                var xhr = new XMLHttpRequest();
-                var url = "http://localhost:3000/users";
-                xhr.open("POST", url, true);
-                xhr.setRequestHeader("Content-type", "application/json");
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        var json = JSON.parse(xhr.responseText);
-                    }
-                };
-                xhr.send(JSON.stringify(usuario)); // se crea el usuario en el db.json
-                }
 });         
